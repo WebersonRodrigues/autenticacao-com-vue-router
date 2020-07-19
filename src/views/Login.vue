@@ -1,22 +1,27 @@
 <template>
   <div class="login">
-    <h1> {{ mensagem }} </h1>
+    <telaLogin />
   </div>
 </template>
 <script>
 
+import telaLogin from "../components/telaLogin"
+
 export default {
-    data() {
-        return {
-            mensagem:"Estou na página de login ;)"
-        }
+  name: "Login",
+
+  components:{
+    telaLogin,
+  },
+
+  data() {
+    return {
+      dialog: false
     }
-}
+  }
+};
 </script>
 <style scoped>
 
-h1{
-    color:brown;
-}
 
-</style>>
+</style>
